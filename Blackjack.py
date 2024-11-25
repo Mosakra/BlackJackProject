@@ -11,6 +11,22 @@ def create_deck():
     dealer_hand = []
     print(deck)
 
+def play_hand(deck):
+    dealer_cards = []
+    player_cards = []
+    random.shuffle(dealer_cards)
+    random.shuffle(player_cards)
+
+        # deal initial cards
+    player_cards.append(deck.pop())
+    dealer_cards.append(deck.pop())
+    player_cards.append(deck.pop())
+    dealer_cards.append(deck.pop())
+    print(f"{player_cards}")
+    print(f"{dealer_cards}")
+    print(f"{player_cards}")
+    print(f"{dealer_cards}")
+
 def main():
     print("BLACKJACK!")
     print("Blackjack payout is 3:2")
